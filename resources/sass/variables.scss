@@ -1,0 +1,67 @@
+// src/sass/main.scss
+@import '~vuetify/src/styles/styles.sass';
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre&display=swap');
+//Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Globals
+$body-font-family: 'Gemunu Libre', sans-serif !important;
+$border-radius-root: 6px;
+$font-size-root: 52px;
+
+// Variables must come before the import
+$btn-letter-spacing: 0;
+$btn-font-weight: 400;
+$list-item-title-font-size: 0.929rem;
+$list-item-dense-title-font-size: 0.929rem;
+$list-item-dense-title-font-weight: initial;
+$fab-icon-sizes: (
+  'small': 20
+);
+$btn-sizes: (
+  'default': 41,
+  'large': 54
+);
+
+$headings: (
+  'h1': (
+    'size': 3.3125rem,
+    'line-height': 1.15em
+  ),
+  'h2': (
+    'size': 2.25rem,
+    'line-height': 1.5em
+  )
+);
+
+/*
+html,
+body,
+.v-application {
+  font-family: $body-font-family;
+}
+
+.v-application {
+    .display-4,
+    .display-3,
+    .display-2,
+    .display-1,
+    .headline,
+    .title,
+    .subtitle-1,
+    .subtitle-2,
+    .body-1,
+    .body-2,
+    .caption,
+    .overline
+    {
+        font-family: $body-font-family;
+    }
+}*/
+//@import '~vuetify/src/styles/settings/_variables.scss';

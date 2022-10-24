@@ -1,0 +1,282 @@
+<script>
+import AppContainer from "@/Layouts/Brenden/AppContainer.vue";
+import CompBreadcrumbs from "@/Component/CompBreadcrumbs";
+import CompHeading from "@/Component/CompHeading.vue";
+import Contact from "@/Pages/Synvast/Electrical/Support/Contact.vue";
+import { ref, reactive, computed, watch, onMounted } from '@vue/composition-api' 
+
+export default{
+  components: { AppContainer, CompBreadcrumbs, CompHeading, Contact, },
+  props: {},
+
+  setup (props, ctx) {
+    const state = reactive({  
+      breadcrumbs: [ 
+        { text: 'Home', disabled: false, href: route('home'), },
+        { text: 'Support Center', disabled: false, href: route('support'), },
+        { text: 'Privacy Policy', disabled: true, href: '', },
+      ],
+      page: {
+        title: 'Privacy Policy',
+        description: 'Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas',
+      },      
+    })
+    
+    return { } 
+  }
+} 
+</script>
+
+<template>
+  <div>
+    <app-container>
+
+      <!-- Page Slot Header -->
+      <template #header></template>
+
+      <!-- Page Slot Home-->
+      <template #page>
+        <comp-breadcrumbs :breadcrumbs="breadcrumbs" active></comp-breadcrumbs>
+        <v-row>
+          <v-col cols="9">
+            <comp-heading v-bind="page" header1></comp-heading>
+            <v-card>
+              <v-card-title>Privacy Policy Agreement</v-card-title>
+              <v-card-text>
+                <p class="text-subtitle-2">Last updated: February 17, 2020</p>
+                <p class="text-caption">This is the Cookie Policy for Brenden Tech, maintained and accessible from <a href="#">https://www.brendentech.co.ke/support/privacy</a> </p>
+                <p class="text-subtitle-2">Interpretation</p>
+                <p class="text-caption">This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+                <p class="text-caption">We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
+                <p class="text-caption">The words of which the initial letter is capitalized have meanings defined under the following conditions.</p>
+                <p class="text-subtitle-2">Definitions</p>
+                <p class="text-caption">For the purposes of this Privacy Policy, the following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+                <ul>
+                  <li>
+                    <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+                  </li>
+                  <li>
+                    <p><strong>Company</strong> (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to Brenden Tech.</p>
+          </li>
+      <li><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where "control" means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</li>
+    <li><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</li>
+  <li><strong>Website</strong> refers to Brenden Tech, accessible from https://www.eusda.org/</li>        <li><strong>Service</strong> refers to the Website.</li>
+      <li><strong>Country</strong> refers to: KENYA</li>
+    <li>
+        <p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
+          </li>
+    <li><strong>Third-party Social Media Service</strong> refers to any website or any social network website through which a User can log in or create an account to use the Service.</li>
+      <li>
+        <p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
+                </li>
+  <li><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</li>      <li><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</li>
+      </ul>
+
+<h1>Collecting and Using Your Personal Data</h1>
+<h2>Types of Data Collected</h2>
+
+<h3>Personal Data</h3>
+<p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+<ul>
+  <li>Email address</li>  <li>First name and last name</li>  <li>Phone number</li>        <li>Usage Data</li>
+</ul>
+
+
+<h3>Usage Data</h3>
+<p>Usage Data is collected automatically when using the Service.</p>
+<p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+<p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
+<p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
+
+
+
+    <h3>Tracking Technologies and Cookies</h3>
+    <p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service.</p>
+    <p>You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service.</p>
+    <p>Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser.</p>
+    <p>We use both session and persistent Cookies for the purposes set out below:</p>
+    <ul>
+        <li>
+            <p><strong>Necessary / Essential Cookies</strong></p>
+            <p>Type: Session Cookies</p>
+            <p>Administered by: Us</p>
+            <p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</p>
+        </li>
+        <li>
+            <p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
+            <p>Type: Persistent Cookies</p>
+            <p>Administered by: Us</p>
+            <p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
+        </li>
+        <li>
+            <p><strong>Functionality Cookies</strong></p>
+            <p>Type: Persistent Cookies</p>
+            <p>Administered by: Us</p>
+            <p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.</p>
+        </li>
+                <li>
+              <p><strong>Tracking and Performance Cookies</strong></p>
+              <p>Type: Persistent Cookies</p>
+              <p>Administered by: Third-Parties</p>
+              <p>Purpose: These Cookies are used to track information about traffic to the Website and how users use the Website. The information gathered via these Cookies may directly or indirectly identify you as an individual visitor. This is because the information collected is typically linked to a pseudonymous identifier associated with the device you use to access the Website. We may also use these Cookies to test new advertisements, pages, features or new functionality of the Website to see how our users react to them.</p>
+          </li>
+                </ul>
+    <p>For more information about the cookies we use and your choices regarding cookies, please visit our Cookies Policy.</p>
+
+<h2>Use of Your Personal Data</h2>
+<p>The Company may use Personal Data for the following purposes:</p>
+<ul>
+    <li><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</li>
+    <li><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</li>
+    <li><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</li>
+    <li><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</li>
+    <li><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</li>
+    <li><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</li>
+</ul>
+
+<p>We may share your personal information in the following situations:</p>
+
+<ul>
+    <li><strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and analyze the use of our Service, to show advertisements to You to help support and maintain Our Service, to contact You, to advertise on third party websites to You after You visited our Service or for payment processing.</li>
+    <li><strong>For Business transfers:</strong> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of our business to another company.</li>
+    <li><strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</li>
+    <li><strong>With Business partners:</strong> We may share Your information with Our business partners to offer You certain products, services or promotions.</li>
+    <li><strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside. If You interact with other users or register through a Third-Party Social Media Service, Your contacts on the Third-Party Social Media Service may see You name, profile, pictures and description of Your activity. Similarly, other users will be able to view descriptions of Your activity, communicate with You and view Your profile.</li>
+</ul>
+
+<h2>Retention of Your Personal Data</h2>
+<p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+<p>The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
+
+<h2>Transfer of Your Personal Data</h2>
+<p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
+<p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
+<p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
+
+<h2>Disclosure of Your Personal Data</h2>
+<h3>Business Transactions</h3>
+<p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+<h3>Law enforcement</h3>
+<p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+<h3>Other legal requirements</h3>
+<p>The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
+<ul>
+    <li>Comply with a legal obligation</li>
+    <li>Protect and defend the rights or property of the Company</li>
+    <li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+    <li>Protect the personal safety of Users of the Service or the public</li>
+    <li>Protect against legal liability</li>
+</ul>
+
+<h2>Security of Your Personal Data</h2>
+<p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
+
+    <h1>Detailed Information on the Processing of Your Personal Data</h1>
+    <p>Service Providers have access to Your Personal Data only to perform their tasks on Our behalf and are obligated not to disclose or use it for any other purpose.</p>
+
+          <h2>Analytics</h2>
+        <p>We may use third-party Service providers to monitor and analyze the use of our Service.</p>
+        <ul>
+                                                                                                        <li>
+                  <p><strong>Unity Analytics</strong></p>
+                  <p>Unity Analytics is provided by Unity Technologies.</p>
+                  <p>For more information on what type of information Unity Analytics collects, please visit their Privacy Policy page: <a href="https://unity3d.com/legal/privacy-policy">https://unity3d.com/legal/privacy-policy</a></p>
+              </li>
+                  </ul>
+  
+  
+  
+  
+  
+          <h2>Usage, Performance and Miscellaneous</h2>
+        <p>We may use third-party Service Providers to provide better improvement of our Service.</p>
+        <ul>
+                                            <li>
+                  <p><strong>FreshDesk</strong></p>
+                  <p>FreshDesk is a customer support software. The service is operated by Freshworks, Inc.</p>
+                  <p>FreshDesk service may collect information from Your Device.</p>
+                  <p>The information gathered by FreshDesk is held in accordance with its Privacy Policy: <a href="https://www.freshworks.com/privacy/">https://www.freshworks.com/privacy/</a></p>
+              </li>
+                            </ul>
+  
+
+
+
+
+    <h1>Children's Privacy</h1>
+    <p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
+    <p>We also may limit how We collect, use, and store some of the information of Users between 13 and 18 years old. In some cases, this means We will be unable to provide certain functionality of the Service to these users.</p>
+    <p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+
+
+<h1>Links to Other Websites</h1>
+<p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+<p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+
+<h1>Changes to this Privacy Policy</h1>
+<p>We may update our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+<p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the "Last updated" date at the top of this Privacy Policy.</p>
+<p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+
+<h1>Contact Us</h1>
+<p>If you have any questions about this Privacy Policy, You can contact us:</p>
+<ul>
+          <li>By visiting this page on our website: https://www.eusda.org/</li>
+      </ul>
+                <p>Privacy Policy Entrepreneurs can use privacy policies to inform their users about the collection, storage, sharing and use of their personal information. The personal information can include your users' names, addresses, email addresses, contact numbers, IP addresses, dates of birth, credit card information, license numbers and insurance information.</p>
+                <p>Data Collection: Outline what data is collected and how you will process it on your webpage.</p>
+                <p>Data Security: Include the measures you’ll take to ensure consumers’ information is secure and protect their data.</p>
+                <p>Personal Information: Mention the types of personal information that your website collects and processes to identify users.</p>
+                <p>Data Protection Rights: Inform your users about their data protection rights.</p>
+                <p>Non-Personal Information: If you're collecting non-personal information of your users, such as their zip codes, pages they visit on your website and web browsers/devices they are using to visit your site, then include it in your privacy agreement.</p>
+                <p>It is Brenden Tech's policy to respect your privacy regarding any information we may collect while operating our website. This Privacy Policy applies to <a href="https://www.eusda.org/">https://www.eusda.org/</a> (hereinafter, "us", "we", or "https://www.eusda.org/"). We respect your privacy and are committed to protecting personally identifiable information you may provide us through the Website. We have adopted this privacy policy ("Privacy Policy") to explain what information may be collected on our Website, how we use this information, and under what circumstances we may disclose the information to third parties. This Privacy Policy applies only to information we collect through the Website and does not apply to our collection of information from other sources.</p>
+                <p>This Privacy Policy, together with the Terms and conditions posted on our Website, set forth the general rules and policies governing your use of our Website. Depending on your activities when visiting our Website, you may be required to agree to additional terms and conditions.</p>
+                <h2>Website Visitors</h2>
+                <p>Like most website operators, Brenden Tech collects non-personally-identifying information of the sort that web browsers and servers typically make available, such as the browser type, language preference, referring site, and the date and time of each visitor request. Brenden Tech's purpose in collecting non-personally identifying information is to better understand how Brenden Tech's visitors use its website. From time to time, Brenden Tech may release non-personally-identifying information in the aggregate, e.g., by publishing a report on trends in the usage of its website.</p>
+                <p>Brenden Tech also collects potentially personally-identifying information like Internet Protocol (IP) addresses for logged in users and for users leaving comments on https://www.eusda.org/ blog posts. Brenden Tech only discloses logged in user and commenter IP addresses under the same circumstances that it uses and discloses personally-identifying information as described below.</p>
+                <h2>Gathering of Personally-Identifying Information</h2>
+                <p>Certain visitors to Brenden Tech's websites choose to interact with Brenden Tech in ways that require Brenden Tech to gather personally-identifying information. The amount and type of information that Brenden Tech gathers depends on the nature of the interaction. For example, we ask visitors who sign up for a blog at https://www.eusda.org/ to provide a username and email address.</p>
+                <h2>Security</h2>
+                <p>The security of your Personal Information is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.</p>
+                <h2>Advertisements</h2>
+                <p>Ads appearing on our website may be delivered to users by advertising partners, who may set cookies. These cookies allow the ad server to recognize your computer each time they send you an online advertisement to compile information about you or others who use your computer. This information allows ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. This Privacy Policy covers the use of cookies by Brenden Tech and does not cover the use of cookies by any advertisers.</p>
+                <h2>Links To External Sites</h2>
+                <p>Our Service may contain links to external sites that are not operated by us. If you click on a third party link, you will be directed to that third party's site. We strongly advise you to review the Privacy Policy and terms and conditions of every site you visit.</p>
+                <p>We have no control over, and assume no responsibility for the content, privacy policies or practices of any third party sites, products or services.</p>
+                <h2>Https://www.eusda.org/ uses Google AdWords for remarketing</h2>
+                <p>Https://www.eusda.org/ uses the remarketing services to advertise on third party websites (including Google) to previous visitors to our site. It could mean that we advertise to previous visitors who haven't completed a task on our site, for example using the contact form to make an enquiry. This could be in the form of an advertisement on the Google search results page, or a site in the Google Display Network. Third-party vendors, including Google, use cookies to serve ads based on someone's past visits. Of course, any data collected will be used in accordance with our own privacy policy and Google's privacy policy.</p>
+                <p>You can set preferences for how Google advertises to you using the Google Ad Preferences page, and if you want to you can opt out of interest-based advertising entirely by cookie settings or permanently using a browser plugin.</p>
+                <h2>Protection of Certain Personally-Identifying Information</h2>
+                <p>Brenden Tech discloses potentially personally-identifying and personally-identifying information only to those of its employees, contractors and affiliated organizations that (i) need to know that information in order to process it on Brenden Tech's behalf or to provide services available at Brenden Tech's website, and (ii) that have agreed not to disclose it to others. Some of those employees, contractors and affiliated organizations may be located outside of your home country; by using Brenden Tech's website, you consent to the transfer of such information to them. Brenden Tech will not rent or sell potentially personally-identifying and personally-identifying information to anyone. Other than to its employees, contractors and affiliated organizations, as described above, Brenden Tech discloses potentially personally-identifying and personally-identifying information only in response to a subpoena, court order or other governmental request, or when Brenden Tech believes in good faith that disclosure is reasonably necessary to protect the property or rights of Brenden Tech, third parties or the public at large.</p>
+                <p>If you are a registered user of https://www.eusda.org/ and have supplied your email address, Brenden Tech may occasionally send you an email to tell you about new features, solicit your feedback, or just keep you up to date with what's going on with Brenden Tech and our products. We primarily use our blog to communicate this type of information, so we expect to keep this type of email to a minimum. If you send us a request (for example via a support email or via one of our feedback mechanisms), we reserve the right to publish it in order to help us clarify or respond to your request or to help us support other users. Brenden Tech takes all measures reasonably necessary to protect against the unauthorized access, use, alteration or destruction of potentially personally-identifying and personally-identifying information.</p>
+                <h2>Aggregated Statistics</h2>
+                <p>Brenden Tech may collect statistics about the behavior of visitors to its website. Brenden Tech may display this information publicly or provide it to others. However, Brenden Tech does not disclose your personally-identifying information.</p>
+                <h2>Affiliate Disclosure</h2>
+                <p>This site uses affiliate links and does earn a commission from certain links. This does not affect your purchases or the price you may pay.</p>
+                <h2>E-commerce</h2>
+                <p>Those who engage in transactions with Brenden Tech – by purchasing Brenden Tech's services or products, are asked to provide additional information, including as necessary the personal and financial information required to process those transactions. In each case, Brenden Tech collects such information only insofar as is necessary or appropriate to fulfill the purpose of the visitor's interaction with Brenden Tech. Brenden Tech does not disclose personally-identifying information other than as described below. And visitors can always refuse to supply personally-identifying information, with the caveat that it may prevent them from engaging in certain website-related activities.</p>
+                <h2>Business Transfers</h2>
+                <p>If Brenden Tech, or substantially all of its assets, were acquired, or in the unlikely event that Brenden Tech goes out of business or enters bankruptcy, user information would be one of the assets that is transferred or acquired by a third party. You acknowledge that such transfers may occur, and that any acquirer of Brenden Tech may continue to use your personal information as set forth in this policy.</p>
+                <h2>Privacy Policy Changes</h2>
+                <p>Although most changes are likely to be minor, Brenden Tech may change its Privacy Policy from time to time, and in Brenden Tech's sole discretion. Brenden Tech encourages visitors to frequently check this page for any changes to its Privacy Policy. Your continued use of this site after any change in this Privacy Policy will constitute your acceptance of such change.</p>			
+                <h2>Credit & Contact Information</h2>
+                <p>This privacy policy was created at <a style="color:inherit;text-decoration:none;" href="https://termsandconditionstemplate.com/privacy-policy-generator/" title="Privacy policy template generator" target="_blank">termsandconditionstemplate.com</a>. If you have any questions about this Privacy Policy, please contact us via <a href="mailto:geontiry@gmail.com">email</a> or <a href="tel:254712852842">phone</a>.</p>
+                <p class="text-caption">Your privacy is critically important to us. Brenden Tech is located at: Brenden Tech 254712852842</p>
+              </v-card-text>
+            </v-card>		
+          </v-col>
+          <v-col cols="3">
+            <contact></contact>
+          </v-col>
+        </v-row>
+      </template>
+
+      <!-- Page Slot Supp -->
+      <template #supp></template>
+      
+       <!-- Page Slot Footer -->
+      <template #footer></template>    
+
+    </app-container>
+  </div>
+</template> 
